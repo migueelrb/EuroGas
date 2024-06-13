@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="textPrimary" format="reference|color" />
+    <attr name="textSecondary" format="reference|color" />
+    <attr name="dividerColor" format="reference|color" />
+</resources>

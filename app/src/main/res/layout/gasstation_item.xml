@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="16dp"
+    app:cardCornerRadius="16dp"
+    app:cardElevation="8dp"
+    app:cardBackgroundColor="?attr/colorPrimaryContainer">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:background="?attr/android:background">
+
+        <TextView
+            android:id="@+id/tvName"
+            style="@style/TextAppearance.Material3.Headline6"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:text="Gasolinera XYZ"
+            tools:text="Nombre de Gasolinera"
+            android:textColor="?attr/android:textColorPrimary" />
+
+        <TextView
+            android:id="@+id/tvNameGas"
+            style="@style/TextAppearance.Material3.Body1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvName"
+            android:text="Isla Cristina"
+            tools:text="Localidad"
+            android:textColor="?attr/android:textColorSecondary" />
+
+        <com.google.android.material.divider.MaterialDivider
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginBottom="16dp"
+            app:layout_constraintTop_toBottomOf="@id/tvNameGas"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:backgroundTint="?attr/dividerColor" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/tvNameGas"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent">
+
+            <TextView
+                android:id="@+id/tvDiesel"
+                style="@style/TextAppearance.Material3.Body2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="32dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:text="Diesel"
+                tools:text="Diesel"
+                android:textColor="?attr/android:textColorPrimary" />
+
+            <TextView
+                android:id="@+id/tvGasoline"
+                style="@style/TextAppearance.Material3.Body2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginStart="32dp"
+                app:layout_constraintStart_toEndOf="@id/tvDiesel"
+                app:layout_constraintTop_toTopOf="parent"
+                android:text="Gasolina"
+                tools:text="Gasolina"
+                android:textColor="?attr/android:textColorPrimary" />
+
+            <TextView
+                android:id="@+id/tvCal"
+                style="@style/TextAppearance.Material3.Caption"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                app:layout_constraintStart_toStartOf="@id/tvDiesel"
+                app:layout_constraintTop_toBottomOf="@id/tvDiesel"
+                android:text="1.25€"
+                tools:text="Precio Diesel"
+                android:textColor="?attr/android:textColorSecondary" />
+
+            <TextView
+                android:id="@+id/tvEco"
+                style="@style/TextAppearance.Material3.Caption"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                app:layout_constraintStart_toStartOf="@id/tvGasoline"
+                app:layout_constraintTop_toBottomOf="@id/tvGasoline"
+                android:text="1.30€"
+                tools:text="Precio Gasolina"
+                android:textColor="?attr/android:textColorSecondary" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</com.google.android.material.card.MaterialCardView>

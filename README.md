@@ -7,8 +7,6 @@
 
 Gasolina España es una aplicación que permite consultar los precios de la gasolina en España utilizando la API oficial del Ministerio de Industria, Comercio y Turismo. Este proyecto está siendo desarrollado por [Miguel Real Barrio](https://github.com/migueelrb) y [Jother](https://github.com/Jother043).
 
-<img src="./logo.jpg" alt="Gasolina España" width="400" />
-
 ## Características
 
 - Consulta en tiempo real de los precios de la gasolina en distintas localidades de España.
